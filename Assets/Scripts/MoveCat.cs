@@ -5,6 +5,8 @@ using UnityEngine;
 public class MoveCat : MonoBehaviour {
 
     public GameObject player;
+    public GameObject Triger;
+
     public int speedRotation = 3;
     public int speed = 5;
     Animator anim;
@@ -13,6 +15,9 @@ public class MoveCat : MonoBehaviour {
     public int jumpSpeed = 50;
     float horizontalSpeed = 2.0f;
     float verticalSpeed = 2.0f;
+    public Collider triger;
+    int Scorekity = 0;
+
     void Start()
     {
         player = (GameObject)this.gameObject;
@@ -46,15 +51,18 @@ public class MoveCat : MonoBehaviour {
         {
             player.transform.position += player.transform.right * speed * Time.deltaTime;
         }
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    player.transform.position += player.transform.up * jumpSpeed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.E))
+        {
+            Take();
+        }
 
-        //    anim.SetBool("Jump", true);
-
-        //}else { anim.SetBool("Jump", false); }
-               
-        
-
+    }
+    
+    private void Take()
+    {
+        if (!Triger.GetComponent<TakeKity>().OnTriggerStay(triger))
+        {
+            ++Scorekity;
+        }
     }
 }

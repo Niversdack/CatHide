@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{C7F59F4F-D152-6983-98A7-85EA903F4358}</ProjectGuid>
+    <ProjectGuid>{3E8A3CEC-5853-7692-DD96-81473119B6C0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,18 +63,19 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MeowEvent.cs" />
     <Compile Include="Assets\Scripts\MoveCat.cs" />
+    <Compile Include="Assets\Scripts\TakeKity.cs" />
     <Compile Include="Assets\Scripts\TrigerCat.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/yubelyushin/Documents/Cats/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/yubelyushin/Documents/GitHub/CatHide/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/yubelyushin/Documents/Cats/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/yubelyushin/Documents/GitHub/CatHide/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/yubelyushin/Documents/Cats/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/yubelyushin/Documents/GitHub/CatHide/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/yubelyushin/Documents/Cats/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/yubelyushin/Documents/GitHub/CatHide/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

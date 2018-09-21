@@ -2,35 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeowEvent : MonoBehaviour {
-    public AudioClip meo;
-    private AudioSource source;
-
+public class MeowEvent : MonoBehaviour
+{
+    public AudioClip[] meo;
+    public AudioSource source;
+    private System.Random rnd = new System.Random();
     void Awake()
     {
-        source = GetComponent<AudioSource>();
+
+
     }
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
-		
-	}
+
+    }
     public void Meow()
     {
+
+
+        int i = rnd.Next(0, meo.Length);
+
         if (!source.isPlaying)
         {
-            source.PlayOneShot(meo);
+            source.PlayOneShot(meo[i]);
 
         }
+
+
         //if(transform.FindChild("Sphere"))
 
     }
-   
+
 
     // Update is called once per frame
-    void Update () {
-        if (Input.GetKey(KeyCode.Space) && !source.isPlaying){
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
             Meow();
         }
-	}
+    }
 }
