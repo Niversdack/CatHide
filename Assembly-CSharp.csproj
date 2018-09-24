@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\MoveCat.cs" />
     <Compile Include="Assets\Scripts\TakeKity.cs" />
     <Compile Include="Assets\Scripts\TrigerCat.cs" />
+    <None Include="Assets\Mega Fantasy Props Pack\README.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/yubelyushin/Documents/GitHub/CatHide/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
