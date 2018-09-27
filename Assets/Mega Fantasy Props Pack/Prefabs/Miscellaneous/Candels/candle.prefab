@@ -3,9 +3,9 @@
 --- !u!1 &171998
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
   - component: {fileID: 443218}
   - component: {fileID: 3384784}
@@ -21,7 +21,7 @@ GameObject:
 --- !u!4 &443218
 Transform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -34,7 +34,7 @@ Transform:
 --- !u!23 &2324092
 MeshRenderer:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171998}
   m_Enabled: 1
@@ -44,7 +44,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f98fac1cf2116764bb0b3f63b9fd4050, type: 2}
   - {fileID: 2100000, guid: da27f5b7bdd1f3d4da0ab822cb7d1408, type: 2}
@@ -71,22 +70,22 @@ MeshRenderer:
 --- !u!33 &3384784
 MeshFilter:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171998}
   m_Mesh: {fileID: 4300000, guid: 2a3f8090f2c9a654b9b4cb36280e1a65, type: 3}
 --- !u!64 &6440998
 MeshCollider:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171998}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 2a3f8090f2c9a654b9b4cb36280e1a65, type: 3}
 --- !u!1001 &100100000
@@ -97,6 +96,6 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 171998}
-  m_IsPrefabAsset: 1
+  m_IsPrefabParent: 1
