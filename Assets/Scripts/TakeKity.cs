@@ -15,19 +15,5 @@ public class TakeKity : MonoBehaviour {
 	void Update () {
 		
 	}
-    public bool OnTriggerStay(Collider other)
-    {
-        foreach (var item in kitis)
-        {
-            if (col.gameObject.name == item.name)
-            {
-                findkity = true;
-            }
-            else
-            {
-                findkity = false;
-            }
-        }
-        return findkity;
-    }
+    
 }
