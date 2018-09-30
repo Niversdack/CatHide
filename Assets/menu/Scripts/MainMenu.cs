@@ -7,8 +7,20 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayGame()
     {
-        Debug.Log("Хуй");
         SceneManager.LoadScene(1);
     }
-
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    public void BackSettings()
+    {
+        GameObject.Find("SettingsMenu").SetActive(true);
+        GameObject.Find("MainMenu").SetActive(false);
+    }
+    public void OpenSettings()
+    {
+        GameObject.Find("SettingsMenu").SetActive(false);
+        GameObject.Find("MainMenu").SetActive(true);
+    }
 }

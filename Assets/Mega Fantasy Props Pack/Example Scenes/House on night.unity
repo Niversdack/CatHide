@@ -2424,10 +2424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 879089965}
-  speedRotation: 3
-  speed: 5
-  jumpSpeed: 50
-  triger: {fileID: 724629727}
+  speedRotation: 150
+  speed: 3
 --- !u!114 &879089967
 MonoBehaviour:
   m_ObjectHideFlags: 0

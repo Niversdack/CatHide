@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using UnityEngine.SceneManagement;
 public class TakeEvent : MonoBehaviour {
     public GameObject text;
     string last;
     int score;
     int gos;
 
-    // Use this for initialization
     void Start () {
         
         score = 0;
@@ -19,10 +19,7 @@ public class TakeEvent : MonoBehaviour {
         Debug.Log(gos);
     }
 	
-	// Update is called once per frame
-	void Update () {
-       
-    }
+
    
     private void OnTriggerEnter(Collider col)
     {
@@ -36,7 +33,7 @@ public class TakeEvent : MonoBehaviour {
             text.GetComponent<Text>().text = last;
             if (gos == score)
             {
-                //переход на следующую сцену
+                SceneManager.LoadScene(1);
             }
         }
     }
